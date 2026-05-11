@@ -1,0 +1,299 @@
+<!-- BRYK REAL ESTATE - WORDPRESS READY CODE -->
+<!-- INSTRUCTIONS: Replace the 3 placeholder URLs below with your actual WordPress Media Library URLs -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+.bryk-body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: white; margin: 0; }
+.bryk-serif { font-family: 'Cormorant Garamond', serif; }
+.bryk-gold { color: #c9a96e; }
+.bryk-gold-bg { background: #c9a96e; }
+.bryk-hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #0a0a0a); position: relative; padding-top: 5rem; }
+.bryk-hero::before { content: ''; position: absolute; inset: 0; opacity: 0.2; background: radial-gradient(circle at 20% 30%, #c9a96e33 0%, transparent 50%), radial-gradient(circle at 80% 70%, #7a5c2433 0%, transparent 50%); }
+.bryk-btn { display: inline-block; padding: 1rem 2.5rem; text-decoration: none; font-size: 0.875rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; border: none; cursor: pointer; transition: all 0.3s; }
+.bryk-btn-primary { background: #c9a96e; color: #0a0a0a; }
+.bryk-btn-primary:hover { background: #e0cc9e; }
+.bryk-btn-outline { border: 1px solid rgba(201,169,110,0.5); color: #c9a96e; }
+.bryk-btn-outline:hover { border-color: #c9a96e; background: rgba(201,169,110,0.1); }
+.bryk-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(201,169,110,0.1); border-radius: 0.5rem; padding: 2rem; backdrop-filter: blur(20px); }
+.bryk-input { width: 100%; background: rgba(10,10,10,0.5); border: 1px solid #333; border-radius: 0.5rem; padding: 0.75rem 1rem; color: white; font-size: 1rem; box-sizing: border-box; }
+.bryk-input:focus { outline: none; border-color: #c9a96e; }
+.bryk-label { display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: #666; margin-bottom: 0.5rem; }
+.bryk-fade { opacity: 0; transform: translateY(30px); transition: opacity 0.8s, transform 0.8s; }
+.bryk-fade.visible { opacity: 1; transform: translateY(0); }
+.bryk-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 1rem 1.5rem; transition: all 0.5s; }
+.bryk-nav.scrolled { background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid #222; }
+.bryk-nav-link { color: #aaa; text-decoration: none; font-size: 0.875rem; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.3s; }
+.bryk-nav-link:hover { color: white; }
+.bryk-gradient-text { background: linear-gradient(135deg, #c9a96e, #e0cc9e, #b08d4a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.bryk-img-ceo { width: 100%; height: 100%; object-fit: cover; object-position: top; filter: grayscale(100%); transition: filter 0.7s; }
+.bryk-img-ceo:hover { filter: grayscale(0%); }
+.bryk-star { color: #c9a96e; }
+@media (max-width: 768px) { .bryk-desktop { display: none; } }
+@media (min-width: 769px) { .bryk-mobile-menu { display: none; } }
+</style>
+
+<div class="bryk-body">
+
+  <!-- NAVIGATION -->
+  <nav class="bryk-nav" id="brykNav">
+    <div style="max-width:80rem;margin:0 auto;display:flex;justify-content:space-between;align-items:center;">
+      <!-- REPLACE THIS URL WITH YOUR WORDPRESS LOGO URL -->
+      <a href="#bryk-home"><img src="YOUR_LOGO_URL_HERE" alt="BRYK Real Estate" style="height:2.5rem;"></a>
+      <div class="bryk-desktop" style="display:flex;gap:2.5rem;align-items:center;">
+        <a href="#bryk-home" class="bryk-nav-link">Home</a>
+        <a href="#bryk-about" class="bryk-nav-link">About</a>
+        <a href="#bryk-reviews" class="bryk-nav-link">Reviews</a>
+        <a href="#bryk-contact" class="bryk-btn bryk-btn-primary" style="padding:0.625rem 1.5rem;">Contact</a>
+      </div>
+      <button class="bryk-mobile-menu" onclick="document.getElementById('brykMobile').classList.toggle('hidden')" style="background:none;border:none;color:white;cursor:pointer;">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="brykMobile" class="hidden" style="padding:2rem;background:#0a0a0a;border-top:1px solid #222;">
+      <a href="#bryk-home" class="bryk-nav-link" style="display:block;margin-bottom:1.5rem;">Home</a>
+      <a href="#bryk-about" class="bryk-nav-link" style="display:block;margin-bottom:1.5rem;">About</a>
+      <a href="#bryk-reviews" class="bryk-nav-link" style="display:block;margin-bottom:1.5rem;">Reviews</a>
+      <a href="#bryk-contact" class="bryk-nav-link" style="color:#c9a96e;">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="bryk-home" class="bryk-hero">
+    <div style="position:relative;z-index:1;max-width:80rem;margin:0 auto;padding:0 1.5rem;">
+      <div class="bryk-fade">
+        <!-- REPLACE THIS URL WITH YOUR WORDPRESS LOGO URL -->
+        <div style="margin-bottom:2.5rem;"><img src="YOUR_LOGO_URL_HERE" alt="BRYK Real Estate" style="height:5rem;margin:0 auto;display:block;"></div>
+        <p class="bryk-gold" style="letter-spacing:0.5em;font-size:0.875rem;text-transform:uppercase;margin-bottom:1.5rem;">Luxury Boutique Brokerage</p>
+        <h1 class="bryk-serif" style="font-size:clamp(3rem,8vw,6rem);font-weight:300;line-height:1.1;margin-bottom:2rem;">Downtown<br><span class="bryk-gradient-text" style="font-style:italic;">Dubai</span></h1>
+        <div style="width:6rem;height:1px;background:#c9a96e;margin:0 auto 2rem;"></div>
+        <p style="color:#888;font-size:clamp(1rem,2vw,1.25rem);max-width:36rem;margin:0 auto 3rem;line-height:1.7;">Curated real estate experiences for the discerning few. Six years of expertise in Dubai's most prestigious district.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="#bryk-about" class="bryk-btn bryk-btn-primary">Learn More</a>
+          <a href="#bryk-contact" class="bryk-btn bryk-btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="bryk-about" style="background:#0a0a0a;padding:6rem 1.5rem;">
+    <div style="max-width:80rem;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="bryk-fade">
+        <p class="bryk-gold" style="letter-spacing:0.4em;font-size:0.75rem;text-transform:uppercase;margin-bottom:1rem;">About BRYK</p>
+        <h2 class="bryk-serif" style="font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.2;margin-bottom:1.5rem;">A Boutique Approach to<br><span class="bryk-gradient-text" style="font-style:italic;">Luxury Real Estate</span></h2>
+        <div style="width:4rem;height:1px;background:#c9a96e;margin-bottom:2rem;"></div>
+        <p style="color:#888;line-height:1.8;margin-bottom:1.5rem;font-size:1.125rem;">Founded on the principle that real estate is more than transactions—it's about lifestyle, legacy, and the art of living well.</p>
+        <p style="color:#666;line-height:1.8;margin-bottom:2rem;">With six years of specialized expertise in Downtown Dubai, we understand the nuances of this iconic district.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding-top:2rem;border-top:1px solid #222;">
+          <div><p class="bryk-serif bryk-gold" style="font-size:1.875rem;">6+</p><p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:#666;">Years Experience</p></div>
+          <div><p class="bryk-serif bryk-gold" style="font-size:1.875rem;">150+</p><p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:#666;">Properties Sold</p></div>
+          <div><p class="bryk-serif bryk-gold" style="font-size:1.875rem;">98%</p><p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:#666;">Satisfaction</p></div>
+        </div>
+      </div>
+      <div class="bryk-fade" style="position:relative;">
+        <div style="position:absolute;inset:-1rem;border:1px solid rgba(201,169,110,0.2);border-radius:0.5rem;"></div>
+        <div style="position:relative;background:#222;border-radius:0.5rem;overflow:hidden;aspect-ratio:3/4;max-width:24rem;margin:0 auto;">
+          <!-- REPLACE THIS URL WITH YOUR WORDPRESS HEADSHOT URL -->
+          <img src="YOUR_HEADSHOT_URL_HERE" alt="BRYK Founder & CEO" class="bryk-img-ceo">
+          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,#0a0a0a,transparent);padding:2rem;">
+            <p class="bryk-serif" style="font-size:1.5rem;color:white;">Founder & CEO</p>
+            <p class="bryk-gold" style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;">BRYK Real Estate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="bryk-reviews" style="background:#0d0d0d;padding:6rem 1.5rem;">
+    <div style="max-width:80rem;margin:0 auto;">
+      <div class="bryk-fade" style="text-align:center;margin-bottom:4rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" style="height:2rem;margin:0 auto 1.5rem;">
+        <p class="bryk-gold" style="letter-spacing:0.4em;font-size:0.75rem;text-transform:uppercase;margin-bottom:1rem;">Client Testimonials</p>
+        <h2 class="bryk-serif" style="font-size:clamp(2rem,4vw,3rem);font-weight:300;margin-bottom:1rem;">Google <span class="bryk-gradient-text" style="font-style:italic;">Reviews</span></h2>
+        <div style="display:flex;justify-content:center;gap:0.25rem;margin-bottom:1rem;">
+          <svg class="bryk-star" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="bryk-star" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="bryk-star" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="bryk-star" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="bryk-star" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span style="color:white;font-weight:500;margin-left:0.5rem;">5.0</span>
+        </div>
+        <div style="width:4rem;height:1px;background:#c9a96e;margin:0 auto;"></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;">
+        <div class="bryk-card bryk-fade">
+          <div style="display:flex;gap:0.25rem;margin-bottom:1rem;">
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p style="color:#aaa;line-height:1.7;margin-bottom:1.5rem;font-style:italic;">"BRYK made our relocation to Dubai seamless. Their knowledge of Downtown properties is unmatched—they found us the perfect penthouse with fountain views within two weeks."</p>
+          <div style="display:flex;align-items:center;gap:0.75rem;">
+            <div style="width:2.5rem;height:2.5rem;border-radius:50%;background:#333;display:flex;align-items:center;justify-content:center;"><span class="bryk-serif bryk-gold">AK</span></div>
+            <div><p style="color:white;font-size:0.875rem;">Ahmed Khalid</p><p style="color:#666;font-size:0.75rem;">2 months ago</p></div>
+          </div>
+        </div>
+
+        <div class="bryk-card bryk-fade" style="transition-delay:0.1s;">
+          <div style="display:flex;gap:0.25rem;margin-bottom:1rem;">
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p style="color:#aaa;line-height:1.7;margin-bottom:1.5rem;font-style:italic;">"The boutique approach is what sets BRYK apart. We never felt like just another client. Every detail was handled with precision and genuine care."</p>
+          <div style="display:flex;align-items:center;gap:0.75rem;">
+            <div style="width:2.5rem;height:2.5rem;border-radius:50%;background:#333;display:flex;align-items:center;justify-content:center;"><span class="bryk-serif bryk-gold">SM</span></div>
+            <div><p style="color:white;font-size:0.875rem;">Sarah Mitchell</p><p style="color:#666;font-size:0.75rem;">4 months ago</p></div>
+          </div>
+        </div>
+
+        <div class="bryk-card bryk-fade" style="transition-delay:0.2s;">
+          <div style="display:flex;gap:0.25rem;margin-bottom:1rem;">
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="bryk-star" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p style="color:#aaa;line-height:1.7;margin-bottom:1.5rem;font-style:italic;">"Sold our Boulevard apartment above market value in just 18 days. BRYK's network and negotiation skills are truly exceptional. Highly recommended."</p>
+          <div style="display:flex;align-items:center;gap:0.75rem;">
+            <div style="width:2.5rem;height:2.5rem;border-radius:50%;background:#333;display:flex;align-items:center;justify-content:center;"><span class="bryk-serif bryk-gold">RJ</span></div>
+            <div><p style="color:white;font-size:0.875rem;">Rajesh Iyer</p><p style="color:#666;font-size:0.75rem;">5 months ago</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bryk-fade" style="text-align:center;margin-top:3rem;">
+        <a href="https://www.google.com/search?q=BRYK+Real+Estate+Dubai" target="_blank" style="display:inline-flex;align-items:center;gap:0.75rem;padding:0.75rem 2rem;border:1px solid #333;border-radius:0.5rem;color:#aaa;text-decoration:none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" style="height:1.25rem;">
+          <span style="font-size:0.875rem;">View All Reviews on Google</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="bryk-contact" style="background:#0a0a0a;padding:6rem 1.5rem;">
+    <div style="max-width:80rem;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
+      <div class="bryk-fade">
+        <p class="bryk-gold" style="letter-spacing:0.4em;font-size:0.75rem;text-transform:uppercase;margin-bottom:1rem;">Get in Touch</p>
+        <h2 class="bryk-serif" style="font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.2;margin-bottom:1.5rem;">Let's Discuss Your <span class="bryk-gradient-text" style="font-style:italic;">Vision</span></h2>
+        <div style="width:4rem;height:1px;background:#c9a96e;margin-bottom:2rem;"></div>
+        <p style="color:#888;line-height:1.8;margin-bottom:3rem;">Whether you're seeking your dream home or looking to maximize your investment, a conversation with BRYK is the first step toward exceptional results.</p>
+
+        <div style="margin-bottom:2rem;display:flex;gap:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:rgba(201,169,110,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p style="color:white;font-weight:500;margin-bottom:0.25rem;">Office Location</p>
+            <p style="color:#666;font-size:0.875rem;">Office 3, Al Saqr Tower, 25th Floor<br>DIFC, Sheikh Zayed Road, Dubai</p>
+          </div>
+        </div>
+
+        <div style="margin-bottom:2rem;display:flex;gap:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:rgba(201,169,110,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <p style="color:white;font-weight:500;margin-bottom:0.25rem;">Phone</p>
+            <p style="color:#666;font-size:0.875rem;">+971 4 XXX XXXX</p>
+          </div>
+        </div>
+
+        <div style="margin-bottom:2rem;display:flex;gap:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:rgba(201,169,110,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p style="color:white;font-weight:500;margin-bottom:0.25rem;">Email</p>
+            <p style="color:#666;font-size:0.875rem;">hello@bryk-realestate.ae</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1rem;">
+          <div style="width:3rem;height:3rem;border-radius:0.5rem;background:rgba(201,169,110,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <p style="color:white;font-weight:500;margin-bottom:0.25rem;">RERA Registration</p>
+            <p style="color:#666;font-size:0.875rem;">ORN 38037</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bryk-fade" style="transition-delay:0.2s;">
+        <form class="bryk-card" style="padding:2.5rem;" onsubmit="event.preventDefault(); alert('Thank you for your inquiry. We will contact you shortly.');">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem;">
+            <div><label class="bryk-label">First Name</label><input type="text" class="bryk-input" placeholder="John"></div>
+            <div><label class="bryk-label">Last Name</label><input type="text" class="bryk-input" placeholder="Doe"></div>
+          </div>
+          <div style="margin-bottom:1.5rem;"><label class="bryk-label">Email</label><input type="email" class="bryk-input" placeholder="john@example.com"></div>
+          <div style="margin-bottom:1.5rem;"><label class="bryk-label">Phone</label><input type="tel" class="bryk-input" placeholder="+971 XX XXX XXXX"></div>
+          <div style="margin-bottom:1.5rem;">
+            <label class="bryk-label">Interest</label>
+            <select class="bryk-input">
+              <option value="">Select an option</option>
+              <option value="buy">Buying a Property</option>
+              <option value="sell">Selling a Property</option>
+              <option value="rent">Renting a Property</option>
+              <option value="invest">Investment Advisory</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div style="margin-bottom:1.5rem;"><label class="bryk-label">Message</label><textarea rows="4" class="bryk-input" style="resize:none;" placeholder="Tell us about your requirements..."></textarea></div>
+          <button type="submit" class="bryk-btn bryk-btn-primary" style="width:100%;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#050505;border-top:1px solid #222;padding:4rem 1.5rem;">
+    <div style="max-width:80rem;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem;">
+        <div>
+          <!-- REPLACE THIS URL WITH YOUR WORDPRESS LOGO URL -->
+          <img src="YOUR_LOGO_URL_HERE" alt="BRYK" style="height:2.5rem;margin-bottom:1.5rem;">
+          <p style="color:#666;font-size:0.875rem;line-height:1.7;max-width:24rem;">A luxury boutique brokerage specializing in Downtown Dubai's most prestigious properties. Six years of expertise, one commitment: excellence.</p>
+        </div>
+        <div>
+          <p style="color:white;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1.5rem;">Quick Links</p>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="margin-bottom:0.75rem;"><a href="#bryk-home" style="color:#666;font-size:0.875rem;text-decoration:none;">Home</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="#bryk-about" style="color:#666;font-size:0.875rem;text-decoration:none;">About Us</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="#bryk-reviews" style="color:#666;font-size:0.875rem;text-decoration:none;">Reviews</a></li>
+            <li><a href="#bryk-contact" style="color:#666;font-size:0.875rem;text-decoration:none;">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="color:white;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:1.5rem;">Legal</p>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="margin-bottom:0.75rem;"><a href="#" style="color:#666;font-size:0.875rem;text-decoration:none;">Privacy Policy</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="#" style="color:#666;font-size:0.875rem;text-decoration:none;">Terms of Service</a></li>
+            <li><a href="#" style="color:#666;font-size:0.875rem;text-decoration:none;">RERA ORN 38037</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top:1px solid #222;padding-top:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+        <p style="color:#444;font-size:0.75rem;">© 2026 BRYK Real Estate. All rights reserved.</p>
+        <p style="color:#444;font-size:0.75rem;">Licensed by the Dubai Land Department</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+const nav = document.getElementById('brykNav');
+window.addEventListener('scroll', () => { if (window.scrollY > 50) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); });
+const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+document.querySelectorAll('.bryk-fade').forEach(el => obs.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function(e) { e.preventDefault(); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth' }); document.getElementById('brykMobile').classList.add('hidden'); }));
+</script>
